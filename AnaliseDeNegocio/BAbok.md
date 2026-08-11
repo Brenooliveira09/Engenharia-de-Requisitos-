@@ -369,7 +369,7 @@ ELICITAÇÃO E REVISÃO
 VALIDAÇÃO
 
 
-O processo deve ser entendido como **cíclico**, e não como uma sequência que termina após a primeira validação.
+#O processo deve ser entendido como **cíclico**, e não como uma sequência que termina após a primeira validação.
 
 #Foi utilizado IA na estruturação do relatório
 #Link BAbok: https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/

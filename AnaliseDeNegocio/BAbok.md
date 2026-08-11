@@ -367,7 +367,7 @@ ANÁLISE DE IMPACTO
 ELICITAÇÃO E REVISÃO
      ↓
 VALIDAÇÃO
-
+```
 
 #O processo deve ser entendido como **cíclico**, e não como uma sequência que termina após a primeira validação.
 

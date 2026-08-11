@@ -373,4 +373,4 @@ O processo deve ser entendido como **cíclico**, e não como uma sequência que 
 
 #Foi utilizado IA na estruturação do relatório
 
-#Link BAbok:https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/
+#Link BAbok: https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/

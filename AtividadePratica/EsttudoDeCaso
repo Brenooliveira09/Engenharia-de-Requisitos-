@@ -1,1 +1,691 @@
-siuuu
+# 📚 Atividade Prática – Engenharia de Requisitos
+
+## Estudo de Caso: Sistema de Atendimento e Agendamento de uma Clínica
+
+**Disciplina:** Engenharia de Requisitos
+**Curso:** Engenharia de Software
+**Modalidade:** Trabalho em grupo
+**Pontuação:** 10,0 pontos
+
+---
+
+# 🎯 1. Objetivo
+
+Esta atividade tem como objetivo desenvolver a capacidade de identificar, analisar e representar processos de negócio como apoio à Engenharia de Requisitos.
+
+A partir de um estudo de caso, o grupo deverá:
+
+* identificar stakeholders;
+* compreender o processo de negócio;
+* identificar entradas e saídas;
+* levantar atividades e regras de negócio;
+* identificar problemas e gargalos;
+* modelar o processo atual (**AS-IS**);
+* propor melhorias;
+* modelar o processo futuro (**TO-BE**);
+* levantar requisitos funcionais;
+* levantar requisitos não funcionais;
+* definir indicadores de desempenho.
+
+A atividade utiliza conceitos apresentados na Aula 03 sobre **Gerenciamento de Processos de Negócio, BPM e BPM CBOK**, incluindo processos ponta a ponta, atividades, regras, stakeholders e mapeamento de processos.
+
+---
+
+# 🏥 2. Estudo de Caso
+
+## Clínica Vida+ Saúde
+
+A **Clínica Vida+ Saúde** é uma clínica médica de médio porte que atende pacientes de diversas especialidades.
+
+Atualmente, o processo de atendimento é realizado de maneira parcialmente manual.
+
+O paciente pode entrar em contato com a clínica por:
+
+* telefone;
+* WhatsApp;
+* atendimento presencial.
+
+Quando o paciente solicita uma consulta, a recepcionista verifica a agenda dos médicos em uma planilha. Caso encontre um horário disponível, registra o paciente e confirma o agendamento.
+
+O problema é que cada recepcionista mantém seus próprios registros e, em alguns casos, as informações não são atualizadas imediatamente.
+
+Essa situação tem provocado **conflitos de horários**, principalmente quando duas recepcionistas tentam agendar pacientes para o mesmo médico.
+
+Além disso, pacientes que já possuem cadastro na clínica frequentemente precisam fornecer novamente informações como:
+
+* Nome;
+* CPF;
+* Telefone;
+* Data de nascimento;
+* E-mail.
+
+Quando o paciente chega para a consulta, a recepcionista confirma seus dados e verifica se o atendimento está agendado.
+
+Em alguns casos, o paciente informa que recebeu uma confirmação por WhatsApp, enquanto a recepcionista não encontra o agendamento na planilha.
+
+Após a consulta, o médico registra as informações do atendimento em um sistema separado.
+
+A clínica também enfrenta problemas relacionados a **cancelamentos e faltas**.
+
+Atualmente, não existe um mecanismo automático para lembrar o paciente da consulta.
+
+Quando um paciente cancela, a recepcionista precisa verificar manualmente a agenda e procurar outro paciente que esteja aguardando atendimento.
+
+Outro problema ocorre quando o médico precisa alterar sua agenda. A recepcionista deve entrar em contato individualmente com os pacientes afetados para informar a mudança.
+
+A direção da clínica deseja implantar um **Sistema de Gestão de Atendimento e Agendamento**, capaz de centralizar as informações e melhorar o processo.
+
+O novo sistema deverá permitir:
+
+* cadastro de pacientes;
+* cadastro de médicos;
+* cadastro de especialidades;
+* consulta de horários disponíveis;
+* realização de agendamentos;
+* cancelamentos;
+* confirmações;
+* envio de lembretes;
+* gerenciamento da agenda dos médicos;
+* acompanhamento de indicadores.
+
+A direção também deseja obter indicadores para acompanhar o desempenho do processo, como:
+
+* quantidade de consultas realizadas;
+* quantidade de cancelamentos;
+* quantidade de faltas;
+* tempo médio de atendimento;
+* taxa de ocupação dos horários.
+
+---
+
+# ⚠️ 3. Problema de Negócio
+
+A clínica possui um processo de atendimento fragmentado, com informações distribuídas em diferentes ferramentas e grande dependência de atividades manuais.
+
+Essa situação provoca:
+
+* conflitos de horários;
+* retrabalho;
+* duplicidade de informações;
+* dificuldade de atualização dos dados;
+* falhas na comunicação com pacientes;
+* dificuldade para controlar cancelamentos;
+* pacientes que não comparecem às consultas;
+* dificuldade para acompanhar indicadores;
+* dificuldade para reorganizar a agenda dos médicos.
+
+A direção acredita que a implantação de um sistema poderá melhorar o processo, mas solicitou inicialmente uma **análise do processo de negócio antes do desenvolvimento do software**.
+
+---
+
+# 💡 4. Desafio
+
+Vocês foram contratados como uma equipe de **Engenharia de Requisitos e Análise de Processos**.
+
+A missão do grupo é analisar o processo atual da Clínica Vida+ Saúde e produzir uma proposta inicial para um sistema de informação.
+
+## Questão central
+
+> **Como o processo atual da clínica pode ser compreendido, melhorado e apoiado por um sistema de informação?**
+
+---
+
+# 👥 5. Organização dos Grupos
+
+* Grupos de **4 a 6 estudantes**.
+* Todos os integrantes devem participar da atividade.
+* O grupo deverá escolher um responsável pela apresentação.
+
+## Papéis sugeridos
+
+| Papel                        | Responsabilidade                          |
+| ---------------------------- | ----------------------------------------- |
+| Analista de Requisitos       | Levantar e documentar os requisitos       |
+| Analista de Processos        | Analisar o processo de negócio            |
+| Representante do Cliente     | Representar as necessidades dos pacientes |
+| Representante da Organização | Representar os interesses da clínica      |
+| Modelador                    | Elaborar os modelos dos processos         |
+| Relator                      | Organizar e documentar o trabalho         |
+
+---
+
+# 🔎 6. Etapa 1 – Identificação do Processo
+
+Identifique o principal processo de negócio descrito no estudo de caso.
+
+Responda:
+
+1. Qual é o nome do processo?
+2. Qual é o objetivo do processo?
+3. Quem é o cliente do processo?
+4. Quem executa as atividades?
+5. Quem gerencia o processo?
+6. Qual evento inicia o processo?
+7. Qual evento encerra o processo?
+8. Qual valor é entregue ao cliente?
+
+---
+
+# 👤 7. Etapa 2 – Identificação dos Stakeholders
+
+Identifique todos os stakeholders envolvidos no processo.
+
+Considere, no mínimo:
+
+* Paciente;
+* Recepcionista;
+* Médico;
+* Gerente da clínica;
+* Direção;
+* Equipe administrativa;
+* Equipe de TI;
+* Responsável financeiro.
+
+## Tabela de Stakeholders
+
+| Stakeholder            | Interesse no processo | Participação | Necessidades |
+| ---------------------- | --------------------- | ------------ | ------------ |
+| Paciente               |                       |              |              |
+| Recepcionista          |                       |              |              |
+| Médico                 |                       |              |              |
+| Gerente                |                       |              |              |
+| Direção                |                       |              |              |
+| Equipe de TI           |                       |              |              |
+| Equipe administrativa  |                       |              |              |
+| Responsável financeiro |                       |              |              |
+
+---
+
+# 🧩 8. Etapa 3 – Análise do Processo Atual
+
+Analise o processo utilizando as perguntas de mapeamento de processos.
+
+## Quem?
+
+* Quem é o cliente?
+* Quem executa as atividades?
+* Quem gerencia?
+* Quem fornece informações?
+* Quem participa das decisões?
+
+## O quê?
+
+* Quais são as entradas?
+* Quais são as saídas?
+* Quais são os recursos utilizados?
+* Quais ferramentas são utilizadas?
+* Quais são os problemas?
+* Quais são os pontos positivos?
+* Quais indicadores poderiam ser utilizados?
+
+## Quando?
+
+* Quando o processo começa?
+* Quando as atividades são executadas?
+* Quando o processo termina?
+
+## Onde?
+
+* Onde o processo é iniciado?
+* Onde as atividades são executadas?
+* Onde as informações são registradas?
+
+## Por quê?
+
+* Por que o processo existe?
+* Qual valor ele entrega ao paciente?
+* Qual valor ele entrega para a clínica?
+
+## Como?
+
+* Como o processo é executado atualmente?
+* Como as informações são registradas?
+* Como ocorre a comunicação com o paciente?
+* Como são tratados os cancelamentos?
+* Como são tratadas as alterações de agenda?
+
+---
+
+# ⚙️ 9. Etapa 4 – Identificação das Atividades
+
+Liste as principais atividades do processo atual.
+
+### Exemplo
+
+1. Solicitar consulta;
+2. Identificar paciente;
+3. Consultar agenda;
+4. Verificar disponibilidade;
+5. Registrar agendamento;
+6. Confirmar consulta;
+7. Realizar atendimento;
+8. Registrar atendimento;
+9. Encerrar atendimento.
+
+O grupo deverá identificar outras atividades necessárias.
+
+## Tabela de Atividades
+
+| Atividade | Responsável | Entrada | Saída | Regra |
+| --------- | ----------- | ------- | ----- | ----- |
+|           |             |         |       |       |
+|           |             |         |       |       |
+|           |             |         |       |       |
+|           |             |         |       |       |
+|           |             |         |       |       |
+
+---
+
+# 📋 10. Etapa 5 – Regras de Negócio
+
+Identifique pelo menos **10 regras de negócio**.
+
+### Exemplos
+
+* **RN01:** Um paciente deve possuir cadastro antes de realizar um agendamento.
+* **RN02:** Um médico não pode possuir dois pacientes agendados no mesmo horário.
+* **RN03:** Uma consulta somente pode ser agendada em horário disponível.
+* **RN04:** O cancelamento de uma consulta deve liberar o horário do médico.
+
+## Tabela de Regras de Negócio
+
+| Código | Regra de Negócio | Origem |
+| ------ | ---------------- | ------ |
+| RN01   |                  |        |
+| RN02   |                  |        |
+| RN03   |                  |        |
+| RN04   |                  |        |
+| RN05   |                  |        |
+| RN06   |                  |        |
+| RN07   |                  |        |
+| RN08   |                  |        |
+| RN09   |                  |        |
+| RN10   |                  |        |
+
+---
+
+# 🚨 11. Etapa 6 – Identificação dos Problemas
+
+Identifique pelo menos **8 problemas** existentes no processo atual.
+
+| Problema             | Causa provável | Impacto | Prioridade |
+| -------------------- | -------------- | ------- | ---------- |
+| Conflito de horários |                |         | 🔴 Alta    |
+| Retrabalho           |                |         |            |
+|                      |                |         |            |
+|                      |                |         |            |
+|                      |                |         |            |
+|                      |                |         |            |
+|                      |                |         |            |
+|                      |                |         |            |
+
+## Classificação
+
+* 🔴 **Alta**
+* 🟡 **Média**
+* 🟢 **Baixa**
+
+---
+
+# 🔄 12. Etapa 7 – Modelagem AS-IS
+
+Elabore o **fluxograma do processo atual (AS-IS)**.
+
+O modelo deve representar:
+
+* início;
+* atividades;
+* responsáveis;
+* decisões;
+* caminhos alternativos;
+* regras;
+* entradas;
+* saídas;
+* fim do processo.
+
+## Sugestões de ferramentas
+
+Utilize uma ferramenta de modelagem, como:
+
+* Draw.io;
+* Bizagi;
+* Lucidchart;
+* Miro;
+* Visio;
+* Canva.
+
+## Entrega
+
+Inclua no trabalho:
+
+* uma imagem do modelo do processo **AS-IS**; ou
+* um link para o modelo.
+
+---
+
+# 🔧 13. Etapa 8 – Proposta de Melhorias
+
+Após compreender o processo atual, proponha melhorias.
+
+| Problema             | Melhoria proposta   | Benefício esperado    |
+| -------------------- | ------------------- | --------------------- |
+| Conflito de horários | Agenda centralizada | Redução de conflitos  |
+| Cadastro duplicado   | Cadastro único      | Redução de retrabalho |
+| Falta de lembretes   | Envio automático    | Redução de faltas     |
+|                      |                     |                       |
+|                      |                     |                       |
+|                      |                     |                       |
+|                      |                     |                       |
+|                      |                     |                       |
+
+> **Requisito:** o grupo deverá apresentar pelo menos **8 propostas de melhoria**.
+
+---
+
+# 🚀 14. Etapa 9 – Modelagem TO-BE
+
+Elabore o **processo futuro (TO-BE)** considerando a utilização do novo sistema.
+
+O processo deverá demonstrar como funcionará após as melhorias.
+
+Considere decisões como:
+
+* O paciente possui cadastro?
+* O horário está disponível?
+* O agendamento foi confirmado?
+* O paciente cancelou?
+* O médico alterou a agenda?
+* O paciente compareceu?
+
+## Entrega
+
+Apresente:
+
+* fluxograma; ou
+* modelo BPMN
+
+do processo **TO-BE**.
+
+---
+
+# 💻 15. Etapa 10 – Requisitos Funcionais
+
+Identifique pelo menos **15 requisitos funcionais**.
+
+Utilize o seguinte padrão:
+
+> **RF01 – O sistema deverá permitir cadastrar pacientes.**
+
+### Exemplos
+
+* **RF01** – O sistema deverá permitir cadastrar pacientes.
+* **RF02** – O sistema deverá permitir consultar pacientes.
+* **RF03** – O sistema deverá permitir cadastrar médicos.
+* **RF04** – O sistema deverá permitir cadastrar especialidades.
+* **RF05** – O sistema deverá permitir consultar horários disponíveis.
+* **RF06** – O sistema deverá permitir realizar agendamentos.
+
+## Tabela de Requisitos Funcionais
+
+| Código | Requisito Funcional | Prioridade |
+| ------ | ------------------- | ---------- |
+| RF01   |                     |            |
+| RF02   |                     |            |
+| RF03   |                     |            |
+| RF04   |                     |            |
+| RF05   |                     |            |
+| RF06   |                     |            |
+| RF07   |                     |            |
+| RF08   |                     |            |
+| RF09   |                     |            |
+| RF10   |                     |            |
+| RF11   |                     |            |
+| RF12   |                     |            |
+| RF13   |                     |            |
+| RF14   |                     |            |
+| RF15   |                     |            |
+
+---
+
+# 🛡️ 16. Etapa 11 – Requisitos Não Funcionais
+
+Identifique pelo menos **10 requisitos não funcionais**.
+
+Considere categorias como:
+
+* Segurança;
+* Desempenho;
+* Disponibilidade;
+* Usabilidade;
+* Confiabilidade;
+* Manutenibilidade;
+* Privacidade;
+* Compatibilidade.
+
+### Exemplo
+
+> **RNF01 – O sistema deverá apresentar os horários disponíveis de um médico em até 3 segundos após a solicitação do usuário.**
+
+## Tabela de Requisitos Não Funcionais
+
+| Código | Categoria       | Requisito |
+| ------ | --------------- | --------- |
+| RNF01  | Desempenho      |           |
+| RNF02  | Segurança       |           |
+| RNF03  | Usabilidade     |           |
+| RNF04  | Disponibilidade |           |
+| RNF05  | Confiabilidade  |           |
+| RNF06  | Privacidade     |           |
+| RNF07  | Desempenho      |           |
+| RNF08  | Segurança       |           |
+| RNF09  | Usabilidade     |           |
+| RNF10  | Compatibilidade |           |
+
+---
+
+# 📊 17. Etapa 12 – Indicadores de Desempenho
+
+Proponha pelo menos **6 indicadores** para acompanhar o desempenho do processo.
+
+### Exemplos
+
+* Taxa de ocupação da agenda;
+* Quantidade de consultas realizadas;
+* Quantidade de cancelamentos;
+* Taxa de faltas;
+* Tempo médio de atendimento;
+* Tempo médio para realização de agendamento.
+
+## Tabela de Indicadores
+
+| Indicador                  | Objetivo | Forma de cálculo | Meta |
+| -------------------------- | -------- | ---------------- | ---- |
+| Taxa de ocupação           |          |                  |      |
+| Taxa de cancelamento       |          |                  |      |
+| Taxa de faltas             |          |                  |      |
+| Tempo médio de atendimento |          |                  |      |
+|                            |          |                  |      |
+|                            |          |                  |      |
+
+---
+
+# ⭐ 18. Etapa 13 – Priorização dos Requisitos
+
+Classifique os requisitos utilizando:
+
+| Prioridade      | Significado                        |
+| --------------- | ---------------------------------- |
+| **Must Have**   | Obrigatório                        |
+| **Should Have** | Importante                         |
+| **Could Have**  | Desejável                          |
+| **Won’t Have**  | Não será implementado nesta versão |
+
+O grupo deverá justificar pelo menos **5 decisões de priorização**.
+
+---
+
+# 🧪 19. Desafio – Transformando Necessidades em Requisitos
+
+Durante uma entrevista, a recepcionista afirma:
+
+> “Precisamos de um sistema que seja rápido e fácil de usar.”
+
+Essa afirmação ainda é vaga e subjetiva.
+
+## Transformação da necessidade em requisito
+
+### Necessidade
+
+> O sistema precisa ser rápido.
+
+### Requisito
+
+> **RNF – O sistema deverá apresentar os horários disponíveis de um médico em no máximo 3 segundos após a solicitação do usuário.**
+
+## Discuta
+
+* O requisito está claro?
+* É mensurável?
+* É testável?
+* Existe alguma ambiguidade?
+* Como ele poderia ser validado?
+
+---
+
+# 🔄 20. Relação com o Ciclo BPM
+
+Relacione cada etapa da atividade ao ciclo de vida de BPM.
+
+| Etapa BPM                | Aplicação na atividade |
+| ------------------------ | ---------------------- |
+| Planejamento             |                        |
+| Análise                  |                        |
+| Desenho e Modelagem      |                        |
+| Implementação            |                        |
+| Monitoramento e Controle |                        |
+| Refinamento              |                        |
+
+---
+
+# 📦 21. Entregáveis
+
+O grupo deverá entregar um documento contendo:
+
+## Análise do Negócio
+
+* [ ] Descrição do processo;
+* [ ] Objetivo;
+* [ ] Stakeholders;
+* [ ] Entradas;
+* [ ] Saídas;
+* [ ] Recursos;
+* [ ] Regras de negócio;
+* [ ] Problemas identificados.
+
+## Modelagem
+
+* [ ] Processo AS-IS;
+* [ ] Identificação dos gargalos;
+* [ ] Propostas de melhoria;
+* [ ] Processo TO-BE.
+
+## Engenharia de Requisitos
+
+* [ ] Requisitos funcionais;
+* [ ] Requisitos não funcionais;
+* [ ] Regras de negócio;
+* [ ] Priorização;
+* [ ] Indicadores.
+
+## Apresentação
+
+Cada grupo deverá apresentar:
+
+1. O problema;
+2. O processo atual;
+3. Os principais problemas encontrados;
+4. O processo proposto;
+5. Os principais requisitos;
+6. As melhorias esperadas.
+
+**Tempo de apresentação:** 10 minutos por grupo.
+
+---
+
+# 💬 22. Questões para Discussão
+
+Ao final da atividade, o grupo deverá responder:
+
+1. Qual é a diferença entre uma função e um processo de negócio?
+2. Por que o processo de agendamento deve ser analisado de forma ponta a ponta?
+3. Quais atividades atualmente geram maior retrabalho?
+4. Quais atividades poderiam ser automatizadas?
+5. Quais regras de negócio precisam obrigatoriamente ser implementadas pelo sistema?
+6. Quais informações são essenciais para o processo?
+7. Qual é o principal gargalo identificado?
+8. Quais requisitos surgiram diretamente da análise do processo?
+9. Quais requisitos não funcionais são críticos para esse sistema?
+10. Como os indicadores podem auxiliar na melhoria contínua do processo?
+
+---
+
+# 📊 23. Critérios de Avaliação
+
+| Critério                            | Pontuação |
+| ----------------------------------- | --------: |
+| Compreensão do estudo de caso       |       1,0 |
+| Identificação dos stakeholders      |       1,0 |
+| Análise do processo atual           |       1,5 |
+| Fluxograma AS-IS                    |       1,5 |
+| Identificação das regras de negócio |       1,0 |
+| Processo TO-BE                      |       1,5 |
+| Requisitos funcionais               |       1,0 |
+| Requisitos não funcionais           |       0,5 |
+| Indicadores e priorização           |       0,5 |
+| Apresentação e trabalho em equipe   |       0,5 |
+| **Total**                           |  **10,0** |
+
+---
+
+# 🎓 24. Resultado Esperado
+
+Ao final da atividade, o grupo deverá demonstrar a transformação:
+
+```text
+PROCESSO ATUAL (AS-IS)
+          ↓
+IDENTIFICAÇÃO DOS PROBLEMAS
+          ↓
+ANÁLISE DOS STAKEHOLDERS
+          ↓
+IDENTIFICAÇÃO DAS REGRAS
+          ↓
+PROPOSTA DE MELHORIAS
+          ↓
+PROCESSO FUTURO (TO-BE)
+          ↓
+REQUISITOS FUNCIONAIS
+          ↓
+REQUISITOS NÃO FUNCIONAIS
+          ↓
+INDICADORES DE DESEMPENHO
+```
+
+---
+
+# 💡 Reflexão Final
+
+O levantamento de requisitos **não começa pelas telas do sistema**.
+
+Antes de definir funcionalidades, o engenheiro de requisitos precisa compreender:
+
+* o negócio;
+* os processos;
+* os stakeholders;
+* as regras;
+* os problemas;
+* as necessidades;
+* os objetivos da organização.
+
+A análise de processos permite compreender como o trabalho é realizado e identificar oportunidades de melhoria antes da definição da solução tecnológica.
+

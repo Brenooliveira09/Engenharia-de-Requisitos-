@@ -15,19 +15,19 @@ Esta atividade tem como objetivo desenvolver a capacidade de identificar, analis
 
 A partir de um estudo de caso, o grupo deverá:
 
-* identificar stakeholders;
-* compreender o processo de negócio;
-* identificar entradas e saídas;
-* levantar atividades e regras de negócio;
-* identificar problemas e gargalos;
-* modelar o processo atual (**AS-IS**);
-* propor melhorias;
-* modelar o processo futuro (**TO-BE**);
-* levantar requisitos funcionais;
-* levantar requisitos não funcionais;
-* definir indicadores de desempenho.
+* Identificar stakeholders;
+* Compreender o processo de negócio;
+* Identificar entradas e saídas;
+* Levantar atividades e regras de negócio;
+* Identificar problemas e gargalos;
+* Modelar o processo atual (AS-IS);
+* Propor melhorias;
+* Modelar o processo futuro (TO-BE);
+* Levantar requisitos funcionais;
+* Levantar requisitos não funcionais;
+* Definir indicadores de desempenho.
 
-A atividade utiliza conceitos apresentados na Aula 03 sobre **Gerenciamento de Processos de Negócio, BPM e BPM CBOK**, incluindo processos ponta a ponta, atividades, regras, stakeholders e mapeamento de processos.
+A atividade utiliza conceitos apresentados na Aula 03 sobre Gerenciamento de Processos de Negócio, BPM e BPM CBOK, incluindo processos ponta a ponta, atividades, regras, stakeholders e mapeamento de processos.
 
 ---
 
@@ -35,21 +35,17 @@ A atividade utiliza conceitos apresentados na Aula 03 sobre **Gerenciamento de P
 
 ## Clínica Vida+ Saúde
 
-A **Clínica Vida+ Saúde** é uma clínica médica de médio porte que atende pacientes de diversas especialidades.
+A Clínica Vida+ Saúde é uma clínica médica de médio porte que atende pacientes de diversas especialidades.
 
 Atualmente, o processo de atendimento é realizado de maneira parcialmente manual.
 
-O paciente pode entrar em contato com a clínica por:
-
-* telefone;
-* WhatsApp;
-* atendimento presencial.
+O paciente pode entrar em contato com a clínica por telefone, WhatsApp ou presencialmente para solicitar um agendamento.
 
 Quando o paciente solicita uma consulta, a recepcionista verifica a agenda dos médicos em uma planilha. Caso encontre um horário disponível, registra o paciente e confirma o agendamento.
 
 O problema é que cada recepcionista mantém seus próprios registros e, em alguns casos, as informações não são atualizadas imediatamente.
 
-Essa situação tem provocado **conflitos de horários**, principalmente quando duas recepcionistas tentam agendar pacientes para o mesmo médico.
+Essa situação tem provocado conflitos de horários, principalmente quando duas recepcionistas tentam agendar pacientes para o mesmo médico.
 
 Além disso, pacientes que já possuem cadastro na clínica frequentemente precisam fornecer novamente informações como:
 
@@ -65,7 +61,7 @@ Em alguns casos, o paciente informa que recebeu uma confirmação por WhatsApp, 
 
 Após a consulta, o médico registra as informações do atendimento em um sistema separado.
 
-A clínica também enfrenta problemas relacionados a **cancelamentos e faltas**.
+A clínica também enfrenta problemas relacionados a cancelamentos e faltas.
 
 Atualmente, não existe um mecanismo automático para lembrar o paciente da consulta.
 
@@ -77,24 +73,24 @@ A direção da clínica deseja implantar um **Sistema de Gestão de Atendimento 
 
 O novo sistema deverá permitir:
 
-* cadastro de pacientes;
-* cadastro de médicos;
-* cadastro de especialidades;
-* consulta de horários disponíveis;
-* realização de agendamentos;
-* cancelamentos;
-* confirmações;
-* envio de lembretes;
-* gerenciamento da agenda dos médicos;
-* acompanhamento de indicadores.
+* Cadastro de pacientes;
+* Cadastro de médicos;
+* Cadastro de especialidades;
+* Consulta de horários disponíveis;
+* Realização de agendamentos;
+* Cancelamentos;
+* Confirmações;
+* Envio de lembretes;
+* Gerenciamento da agenda dos médicos;
+* Acompanhamento de indicadores.
 
 A direção também deseja obter indicadores para acompanhar o desempenho do processo, como:
 
-* quantidade de consultas realizadas;
-* quantidade de cancelamentos;
-* quantidade de faltas;
-* tempo médio de atendimento;
-* taxa de ocupação dos horários.
+* Quantidade de consultas realizadas;
+* Quantidade de cancelamentos;
+* Quantidade de faltas;
+* Tempo médio de atendimento;
+* Taxa de ocupação dos horários.
 
 ---
 
@@ -104,17 +100,17 @@ A clínica possui um processo de atendimento fragmentado, com informações dist
 
 Essa situação provoca:
 
-* conflitos de horários;
-* retrabalho;
-* duplicidade de informações;
-* dificuldade de atualização dos dados;
-* falhas na comunicação com pacientes;
-* dificuldade para controlar cancelamentos;
-* pacientes que não comparecem às consultas;
-* dificuldade para acompanhar indicadores;
-* dificuldade para reorganizar a agenda dos médicos.
+* Conflitos de horários;
+* Retrabalho;
+* Duplicidade de informações;
+* Dificuldade de atualização dos dados;
+* Falhas na comunicação com pacientes;
+* Dificuldade para controlar cancelamentos;
+* Pacientes que não comparecem às consultas;
+* Dificuldade para acompanhar indicadores;
+* Dificuldade para reorganizar a agenda dos médicos.
 
-A direção acredita que a implantação de um sistema poderá melhorar o processo, mas solicitou inicialmente uma **análise do processo de negócio antes do desenvolvimento do software**.
+A direção acredita que a implantação de um sistema poderá melhorar o processo, mas solicitou inicialmente uma análise do processo de negócio antes do desenvolvimento do software.
 
 ---
 
@@ -126,13 +122,13 @@ A missão do grupo é analisar o processo atual da Clínica Vida+ Saúde e produ
 
 ## Questão central
 
-> **Como o processo atual da clínica pode ser compreendido, melhorado e apoiado por um sistema de informação?**
+> Como o processo atual da clínica pode ser compreendido, melhorado e apoiado por um sistema de informação?
 
 ---
 
 # 👥 5. Organização dos Grupos
 
-* Grupos de **4 a 6 estudantes**.
+* Grupos de 4 a 6 estudantes.
 * Todos os integrantes devem participar da atividade.
 * O grupo deverá escolher um responsável pela apresentação.
 
@@ -183,16 +179,14 @@ Considere, no mínimo:
 
 ## Tabela de Stakeholders
 
-| Stakeholder            | Interesse no processo | Participação | Necessidades |
-| ---------------------- | --------------------- | ------------ | ------------ |
-| Paciente               |                       |              |              |
-| Recepcionista          |                       |              |              |
-| Médico                 |                       |              |              |
-| Gerente                |                       |              |              |
-| Direção                |                       |              |              |
-| Equipe de TI           |                       |              |              |
-| Equipe administrativa  |                       |              |              |
-| Responsável financeiro |                       |              |              |
+| Stakeholder   | Interesse no processo | Participação | Necessidades |
+| ------------- | --------------------- | ------------ | ------------ |
+| Paciente      |                       |              |              |
+| Recepcionista |                       |              |              |
+| Médico        |                       |              |              |
+| Gerente       |                       |              |              |
+| Direção       |                       |              |              |
+| Equipe de TI  |                       |              |              |
 
 ---
 
@@ -250,7 +244,7 @@ Analise o processo utilizando as perguntas de mapeamento de processos.
 
 Liste as principais atividades do processo atual.
 
-### Exemplo
+### Exemplo:
 
 1. Solicitar consulta;
 2. Identificar paciente;
@@ -306,11 +300,11 @@ Identifique pelo menos **10 regras de negócio**.
 
 # 🚨 11. Etapa 6 – Identificação dos Problemas
 
-Identifique pelo menos **8 problemas** existentes no processo atual.
+Identifique pelo menos **8 problemas existentes no processo atual**.
 
 | Problema             | Causa provável | Impacto | Prioridade |
 | -------------------- | -------------- | ------- | ---------- |
-| Conflito de horários |                |         | 🔴 Alta    |
+| Conflito de horários |                |         | Alta       |
 | Retrabalho           |                |         |            |
 |                      |                |         |            |
 |                      |                |         |            |
@@ -319,7 +313,7 @@ Identifique pelo menos **8 problemas** existentes no processo atual.
 |                      |                |         |            |
 |                      |                |         |            |
 
-## Classificação
+### Classificação
 
 * 🔴 **Alta**
 * 🟡 **Média**
@@ -329,21 +323,21 @@ Identifique pelo menos **8 problemas** existentes no processo atual.
 
 # 🔄 12. Etapa 7 – Modelagem AS-IS
 
-Elabore o **fluxograma do processo atual (AS-IS)**.
+Elabore o fluxograma do processo atual (**AS-IS**).
 
 O modelo deve representar:
 
-* início;
-* atividades;
-* responsáveis;
-* decisões;
-* caminhos alternativos;
-* regras;
-* entradas;
-* saídas;
-* fim do processo.
+* Início;
+* Atividades;
+* Responsáveis;
+* Decisões;
+* Caminhos alternativos;
+* Regras;
+* Entradas;
+* Saídas;
+* Fim do processo.
 
-## Sugestões de ferramentas
+## Sugestão
 
 Utilize uma ferramenta de modelagem, como:
 
@@ -356,10 +350,7 @@ Utilize uma ferramenta de modelagem, como:
 
 ## Entrega
 
-Inclua no trabalho:
-
-* uma imagem do modelo do processo **AS-IS**; ou
-* um link para o modelo.
+Inclua no trabalho uma imagem ou link para o modelo do processo AS-IS.
 
 ---
 
@@ -378,13 +369,13 @@ Após compreender o processo atual, proponha melhorias.
 |                      |                     |                       |
 |                      |                     |                       |
 
-> **Requisito:** o grupo deverá apresentar pelo menos **8 propostas de melhoria**.
+O grupo deverá apresentar pelo menos **8 propostas de melhoria**.
 
 ---
 
 # 🚀 14. Etapa 9 – Modelagem TO-BE
 
-Elabore o **processo futuro (TO-BE)** considerando a utilização do novo sistema.
+Elabore o processo futuro (**TO-BE**) considerando a utilização do novo sistema.
 
 O processo deverá demonstrar como funcionará após as melhorias.
 
@@ -399,12 +390,7 @@ Considere decisões como:
 
 ## Entrega
 
-Apresente:
-
-* fluxograma; ou
-* modelo BPMN
-
-do processo **TO-BE**.
+Apresente o fluxograma ou modelo BPMN do processo TO-BE.
 
 ---
 
@@ -416,7 +402,7 @@ Utilize o seguinte padrão:
 
 > **RF01 – O sistema deverá permitir cadastrar pacientes.**
 
-### Exemplos
+### Exemplos:
 
 * **RF01** – O sistema deverá permitir cadastrar pacientes.
 * **RF02** – O sistema deverá permitir consultar pacientes.
@@ -487,7 +473,7 @@ Considere categorias como:
 
 Proponha pelo menos **6 indicadores** para acompanhar o desempenho do processo.
 
-### Exemplos
+### Exemplos:
 
 * Taxa de ocupação da agenda;
 * Quantidade de consultas realizadas;
@@ -504,8 +490,6 @@ Proponha pelo menos **6 indicadores** para acompanhar o desempenho do processo.
 | Taxa de cancelamento       |          |                  |      |
 | Taxa de faltas             |          |                  |      |
 | Tempo médio de atendimento |          |                  |      |
-|                            |          |                  |      |
-|                            |          |                  |      |
 
 ---
 
@@ -518,7 +502,7 @@ Classifique os requisitos utilizando:
 | **Must Have**   | Obrigatório                        |
 | **Should Have** | Importante                         |
 | **Could Have**  | Desejável                          |
-| **Won’t Have**  | Não será implementado nesta versão |
+| **Won't Have**  | Não será implementado nesta versão |
 
 O grupo deverá justificar pelo menos **5 decisões de priorização**.
 
@@ -528,17 +512,19 @@ O grupo deverá justificar pelo menos **5 decisões de priorização**.
 
 Durante uma entrevista, a recepcionista afirma:
 
-> “Precisamos de um sistema que seja rápido e fácil de usar.”
+> "Precisamos de um sistema que seja rápido e fácil de usar."
 
 Essa afirmação ainda é vaga e subjetiva.
 
-## Transformação da necessidade em requisito
+Transforme-a em um requisito verificável.
 
-### Necessidade
+### Exemplo
+
+**Necessidade:**
 
 > O sistema precisa ser rápido.
 
-### Requisito
+**Requisito:**
 
 > **RNF – O sistema deverá apresentar os horários disponíveis de um médico em no máximo 3 segundos após a solicitação do usuário.**
 
@@ -653,39 +639,31 @@ Ao final da atividade, o grupo deverá demonstrar a transformação:
 
 ```text
 PROCESSO ATUAL (AS-IS)
-          ↓
+        ↓
 IDENTIFICAÇÃO DOS PROBLEMAS
-          ↓
+        ↓
 ANÁLISE DOS STAKEHOLDERS
-          ↓
+        ↓
 IDENTIFICAÇÃO DAS REGRAS
-          ↓
+        ↓
 PROPOSTA DE MELHORIAS
-          ↓
+        ↓
 PROCESSO FUTURO (TO-BE)
-          ↓
+        ↓
 REQUISITOS FUNCIONAIS
-          ↓
+        ↓
 REQUISITOS NÃO FUNCIONAIS
-          ↓
+        ↓
 INDICADORES DE DESEMPENHO
 ```
 
 ---
 
-# 💡 Reflexão Final
+# 💡 Reflexão final
 
-O levantamento de requisitos **não começa pelas telas do sistema**.
+O levantamento de requisitos não começa pelas telas do sistema.
 
-Antes de definir funcionalidades, o engenheiro de requisitos precisa compreender:
-
-* o negócio;
-* os processos;
-* os stakeholders;
-* as regras;
-* os problemas;
-* as necessidades;
-* os objetivos da organização.
+Antes de definir funcionalidades, o engenheiro de requisitos precisa compreender o negócio, os processos, os stakeholders, as regras, os problemas, as necessidades e os objetivos da organização.
 
 A análise de processos permite compreender como o trabalho é realizado e identificar oportunidades de melhoria antes da definição da solução tecnológica.
 

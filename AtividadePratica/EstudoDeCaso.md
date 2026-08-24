@@ -83,7 +83,7 @@ Além disso, o paciente terá mais facilidade para:
 
 ---
 
-# Etapa 4 – Identificação das Atividades
+# Identificação das Atividades
 
 As principais atividades identificadas no processo atual de atendimento de uma clínica são:
 

@@ -83,6 +83,209 @@ Além disso, o paciente terá mais facilidade para:
 
 ---
 
+# Cliente do processo
+
+O principal cliente do processo é o **paciente**, que solicita o agendamento, comparece à consulta e recebe o atendimento médico.
+
+# Quem executa as atividades
+
+As principais atividades são executadas pela **recepcionista**, que realiza o cadastro, consulta a agenda, verifica horários disponíveis, registra agendamentos, confirma consultas e trata cancelamentos e alterações de agenda.
+
+O **médico** realiza a consulta e registra as informações do atendimento em um sistema separado.
+
+# Quem gerencia
+
+A gestão do processo envolve principalmente a **gerência e a direção da clínica**, responsáveis por acompanhar o funcionamento do atendimento e buscar melhorias.
+
+# Quem fornece informações
+
+O **paciente** fornece seus dados pessoais e informações necessárias para o agendamento.
+
+Os **médicos** fornecem informações sobre sua disponibilidade e agenda.
+
+# Quem participa das decisões
+
+A **recepcionista** participa das decisões operacionais, como escolha de horários disponíveis e reorganização da agenda em casos de cancelamento.
+
+A **gerência e a direção** participam das decisões relacionadas à gestão e melhoria do processo.
+
+---
+
+# O quê?
+
+## Entradas
+
+- Solicitação de agendamento;
+- Nome do paciente;
+- CPF;
+- Telefone;
+- Data de nascimento;
+- E-mail;
+- Disponibilidade dos médicos;
+- Informações sobre cancelamentos e alterações de agenda.
+
+## Saídas
+
+- Agendamento realizado;
+- Confirmação da consulta;
+- Atendimento realizado;
+- Registro das informações da consulta;
+- Cancelamento ou alteração de agendamento.
+
+## Recursos utilizados
+
+- Recepcionistas;
+- Médicos;
+- Computadores;
+- Dados dos pacientes;
+- Informações das agendas médicas.
+
+## Ferramentas utilizadas
+
+- Planilhas para controle das agendas;
+- Telefone;
+- WhatsApp;
+- Atendimento presencial;
+- Sistema separado utilizado pelo médico para registrar o atendimento.
+
+## Problemas identificados
+
+- Conflitos de horários;
+- Retrabalho;
+- Duplicidade de informações;
+- Dados desatualizados;
+- Falhas na comunicação com os pacientes;
+- Dificuldade no controle de cancelamentos;
+- Falta de lembretes automáticos;
+- Dificuldade para reorganizar a agenda dos médicos.
+
+Esses problemas são decorrentes principalmente da utilização de registros separados e da grande dependência de atividades manuais.
+
+## Pontos positivos
+
+- O processo permite realizar agendamentos por diferentes canais;
+- A recepcionista verifica a disponibilidade dos médicos antes de realizar o agendamento;
+- Os dados do atendimento são registrados após a consulta;
+- A clínica já possui informações e procedimentos que podem servir como base para a implantação de um sistema centralizado.
+
+## Indicadores que poderiam ser utilizados
+
+- Quantidade de consultas realizadas;
+- Quantidade de cancelamentos;
+- Quantidade de faltas;
+- Tempo médio de atendimento;
+- Taxa de ocupação dos horários;
+- Tempo médio para realização de agendamentos.
+
+---
+
+# Quando?
+
+## Início do processo
+
+O processo começa quando o paciente entra em contato com a clínica para solicitar uma consulta, podendo utilizar:
+
+- Telefone;
+- WhatsApp;
+- Atendimento presencial.
+
+## Execução das atividades
+
+As atividades são realizadas conforme a solicitação do paciente, durante:
+
+1. Agendamento;
+2. Confirmação;
+3. Chegada à clínica;
+4. Realização da consulta.
+
+## Término do processo
+
+O processo termina após a realização da consulta e o registro das informações do atendimento pelo médico.
+
+---
+
+# Onde?
+
+## Onde o processo é iniciado
+
+O processo pode ser iniciado por:
+
+- Telefone;
+- WhatsApp;
+- Atendimento presencial na clínica.
+
+## Onde as atividades são executadas
+
+As atividades de agendamento e recepção são realizadas na clínica, enquanto o contato com o paciente também pode ocorrer por telefone e WhatsApp.
+
+## Onde as informações são registradas
+
+As agendas dos médicos são registradas em **planilhas mantidas pelas recepcionistas**.
+
+O registro das informações do atendimento médico é realizado posteriormente em um **sistema separado**.
+
+---
+
+# Por quê?
+
+## Por que o processo existe
+
+O processo existe para permitir que os pacientes:
+
+- Agendem consultas;
+- Sejam atendidos pelos médicos;
+- Tenham suas informações registradas.
+
+## Valor entregue ao paciente
+
+O processo proporciona ao paciente **acesso ao atendimento médico em um horário previamente agendado**.
+
+## Valor entregue para a clínica
+
+Para a clínica, o processo permite:
+
+- Organizar os atendimentos;
+- Utilizar os horários disponíveis dos médicos;
+- Registrar as informações das consultas.
+
+---
+
+# Como?
+
+## Como o processo é executado atualmente
+
+O paciente solicita uma consulta. A recepcionista verifica a agenda do médico em uma planilha.
+
+Se houver disponibilidade, registra o paciente e confirma o agendamento.
+
+Entretanto, como cada recepcionista mantém seus próprios registros, as informações podem não ser atualizadas imediatamente, gerando **conflitos de horários**.
+
+## Como as informações são registradas
+
+Os dados dos pacientes e os agendamentos são registrados manualmente.
+
+As agendas são mantidas em planilhas diferentes e o médico registra as informações do atendimento em outro sistema.
+
+## Como ocorre a comunicação com o paciente
+
+A comunicação ocorre principalmente por:
+
+- Telefone;
+- WhatsApp;
+- Atendimento presencial.
+
+Em alguns casos, há divergência entre a confirmação recebida pelo paciente via WhatsApp e o registro existente na planilha.
+
+## Como são tratados os cancelamentos
+
+Quando um paciente cancela uma consulta, a recepcionista precisa verificar manualmente a agenda e procurar outro paciente que esteja aguardando atendimento para ocupar o horário disponível.
+
+## Como são tratadas as alterações de agenda
+
+Quando um médico altera sua agenda, a recepcionista precisa entrar em contato individualmente com todos os pacientes afetados para comunicar a mudança.
+
+---
+
 # Identificação das Atividades
 
 As principais atividades identificadas no processo atual de atendimento de uma clínica são:

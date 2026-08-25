@@ -103,7 +103,7 @@ O **paciente** fornece seus dados pessoais e informações necessárias para o a
 
 Os **médicos** fornecem informações sobre sua disponibilidade e agenda.
 
-# Quem participa das decisões 
+# Quem são os deliberadores
 
 A **recepcionista** participa das decisões operacionais, como escolha de horários disponíveis e reorganização da agenda em casos de cancelamento.
 

@@ -97,7 +97,7 @@ O **médico** realiza a consulta e registra as informações do atendimento em u
 
 A gestão do processo envolve principalmente a **gerência e a direção da clínica**, responsáveis por acompanhar o funcionamento do atendimento e buscar melhorias.
 
-# Quem  fornece informações
+# Quem fornece informações 
 
 O **paciente** fornece seus dados pessoais e informações necessárias para o agendamento.
 

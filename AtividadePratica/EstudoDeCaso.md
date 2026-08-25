@@ -97,13 +97,13 @@ O **médico** realiza a consulta e registra as informações do atendimento em u
 
 A gestão do processo envolve principalmente a **gerência e a direção da clínica**, responsáveis por acompanhar o funcionamento do atendimento e buscar melhorias.
 
-# Quem fornece informações 
+# Quem alimenta o processo
 
 O **paciente** fornece seus dados pessoais e informações necessárias para o agendamento.
 
 Os **médicos** fornecem informações sobre sua disponibilidade e agenda.
 
-# Quem participa das decisões
+# Quem participa das decisões 
 
 A **recepcionista** participa das decisões operacionais, como escolha de horários disponíveis e reorganização da agenda em casos de cancelamento.
 

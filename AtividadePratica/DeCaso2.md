@@ -38,34 +38,39 @@ Esses problemas geram retrabalho, falhas de comunicação e dificuldades no gere
 
 ## Fluxograma do Processo
 
-```mermaid
-graph TD
-    A([Início: Paciente solicita consulta]) --> B[Recepcionista busca cadastro do paciente]
-    B --> C{Possui cadastro?}
-    
-    C -- Não --> D[Cadastrar dados do paciente]
-    D --> E[Verificar disponibilidade de agenda]
-    C -- Sim --> E
-    
-    E --> F{Horário disponível?}
-    F -- Não --> G[Oferecer novos horários]
-    G --> H{Paciente aceita?}
-    H -- Não --> I([Fim: Agendamento não realizado])
-    H -- Sim --> E
-    
-    F -- Sim --> J{Atendimento por Convênio?}
-    J -- Sim --> K[Validar elegibilidade com Plano de Saúde]
-    K --> L{Autorizado?}
-    L -- Não --> M[Informar paciente / Solicitar pagamento particular]
-    M --> N{Aceita pagamento?}
-    N -- Não --> I
-    N -- Sim --> O[Confirmar Agendamento]
-    L -- Sim --> O
-    J -- Não --> O
-    
-    O --> P[Paciente comparece na data agendada]
-    P --> Q[Médico realiza a consulta e atualiza prontuário]
-    Q --> R([Fim: Consulta realizada e faturamento gerado])
+flowchart TD
+    A([Inicio]) --> B[Paciente solicita consulta]
+    B --> C[Recepcionista busca cadastro]
+    C --> D{Possui cadastro}
+
+    D -->|Nao| E[Cadastrar dados do paciente]
+    E --> F[Verificar disponibilidade da agenda]
+    D -->|Sim| F
+
+    F --> G{Horario disponivel}
+
+    G -->|Nao| H[Oferecer outros horarios]
+    H --> I{Paciente aceita}
+    I -->|Nao| J([Agendamento nao realizado])
+    I -->|Sim| F
+
+    G -->|Sim| K{Atendimento por convenio}
+
+    K -->|Sim| L[Validar elegibilidade no plano de saude]
+    L --> M{Autorizado}
+
+    M -->|Nao| N[Informar paciente e solicitar pagamento particular]
+    N --> O{Aceita pagamento}
+    O -->|Nao| J
+    O -->|Sim| P[Confirmar agendamento]
+
+    M -->|Sim| P
+    K -->|Nao| P
+
+    P --> Q[Paciente comparece na data agendada]
+    Q --> R[Medico realiza consulta]
+    R --> S[Medico atualiza prontuario]
+    S --> T([Consulta realizada e faturamento gerado])
 
     | Problema                                             | Melhoria proposta                                                                                       | Benefício esperado                                                                        |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |

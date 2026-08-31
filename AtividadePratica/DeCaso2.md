@@ -72,11 +72,13 @@ flowchart TD
     R --> S[Medico atualiza prontuario]
     S --> T([Consulta realizada e faturamento gerado])
 
+    
+
     | Problema                                             | Melhoria proposta                                                                                       | Benefício esperado                                                                        |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Conflito de horários**                             | Criar uma agenda única e atualizada para todos os atendentes.                                           | Evitar que dois pacientes sejam marcados no mesmo horário.                                |
-| Cadastro duplicado**                               | Utilizar um cadastro único de pacientes.                                                                | Diminuir o retrabalho e facilitar o atendimento.                                          |
-| Falta de lembretes**                               | Enviar lembretes automáticos pelo sistema, como por WhatsApp ou outro canal disponível.                 | Reduzir o número de pacientes que esquecem da consulta.                                   |
+| Conflito de horários                             | Criar uma agenda única e atualizada para todos os atendentes.                                           | Evitar que dois pacientes sejam marcados no mesmo horário.                                |
+| Cadastro duplicado                              | Utilizar um cadastro único de pacientes.                                                                | Diminuir o retrabalho e facilitar o atendimento.                                          |
+| Falta de lembretes                               | Enviar lembretes automáticos pelo sistema, como por WhatsApp ou outro canal disponível.                 | Reduzir o número de pacientes que esquecem da consulta.                                   |
 | Confirmações que não aparecem na agenda         | Registrar o agendamento diretamente no sistema no momento da confirmação.                               | Evitar divergência entre o que foi informado ao paciente e o que aparece para a recepção. |
 | Cancelamentos feitos manualmente                | Permitir que o cancelamento seja registrado diretamente no sistema e liberar o horário automaticamente. | Facilitar o controle da agenda e permitir o reaproveitamento do horário.                  |
 | Alteração na agenda do médico                    | Criar uma função para alterar a agenda e avisar automaticamente os pacientes afetados.                  | Diminuir o trabalho da recepção e melhorar a comunicação.                                 |

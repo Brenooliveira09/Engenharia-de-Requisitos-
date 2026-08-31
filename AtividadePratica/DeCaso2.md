@@ -39,6 +39,9 @@ Esses problemas geram retrabalho, falhas de comunicação e dificuldades no gere
 ## Fluxograma do Processo
 file:///C:/Users/nathan.andrade/Downloads/fluxograma%20do%20processo.pdf 
 
+---
+
+
 
 | Problema                                             | Melhoria proposta                                                                                       | Benefício esperado                                                                        |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -55,5 +58,5 @@ file:///C:/Users/nathan.andrade/Downloads/fluxograma%20do%20processo.pdf
 
 ---
 
-Fluxograma To Be
+## Fluxograma To Be
 file:///C:/Users/nathan.andrade/Downloads/processo%20to%20be.pdf 

@@ -1,6 +1,6 @@
 # 10. Regras de Negócio
 
-| Código | Regra de Negócio | Origem |
+| Código | Regra | Origem |
 |---|---|---|
 | RN01 | O paciente precisa estar cadastrado para poder realizar um agendamento. | Processo atual |
 | RN02 | Não pode haver dois pacientes marcados para o mesmo médico no mesmo horário. | Problema de conflito de horários |
@@ -37,44 +37,10 @@ Esses problemas geram retrabalho, falhas de comunicação e dificuldades no gere
 ---
 
 ## Fluxograma do Processo
+file:///C:/Users/nathan.andrade/Downloads/fluxograma%20do%20processo.pdf 
 
-flowchart TD
-    A([Inicio]) --> B[Paciente solicita consulta]
-    B --> C[Recepcionista busca cadastro]
-    C --> D{Possui cadastro}
 
-    D -->|Nao| E[Cadastrar dados do paciente]
-    E --> F[Verificar disponibilidade da agenda]
-    D -->|Sim| F
-
-    F --> G{Horario disponivel}
-
-    G -->|Nao| H[Oferecer outros horarios]
-    H --> I{Paciente aceita}
-    I -->|Nao| J([Agendamento nao realizado])
-    I -->|Sim| F
-
-    G -->|Sim| K{Atendimento por convenio}
-
-    K -->|Sim| L[Validar elegibilidade no plano de saude]
-    L --> M{Autorizado}
-
-    M -->|Nao| N[Informar paciente e solicitar pagamento particular]
-    N --> O{Aceita pagamento}
-    O -->|Nao| J
-    O -->|Sim| P[Confirmar agendamento]
-
-    M -->|Sim| P
-    K -->|Nao| P
-
-    P --> Q[Paciente comparece na data agendada]
-    Q --> R[Medico realiza consulta]
-    R --> S[Medico atualiza prontuario]
-    S --> T([Consulta realizada e faturamento gerado])
-
-    
-
-    | Problema                                             | Melhoria proposta                                                                                       | Benefício esperado                                                                        |
+| Problema                                             | Melhoria proposta                                                                                       | Benefício esperado                                                                        |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | Conflito de horários                             | Criar uma agenda única e atualizada para todos os atendentes.                                           | Evitar que dois pacientes sejam marcados no mesmo horário.                                |
 | Cadastro duplicado                              | Utilizar um cadastro único de pacientes.                                                                | Diminuir o retrabalho e facilitar o atendimento.                                          |
@@ -84,5 +50,10 @@ flowchart TD
 | Alteração na agenda do médico                    | Criar uma função para alterar a agenda e avisar automaticamente os pacientes afetados.                  | Diminuir o trabalho da recepção e melhorar a comunicação.                                 |
 | Dificuldade para acompanhar os dados            | Criar uma área com indicadores do processo.                                                             | Facilitar o acompanhamento dos resultados da clínica.                                     |
 | Informações espalhadas em diferentes ferramentas | Centralizar pacientes, médicos, especialidades, consultas e atendimentos em um único sistema.           | Melhorar a organização e facilitar o acesso às informações.                               |
-| Muitos pacientes faltando                        | Enviar lembretes e permitir confirmação antecipada da consulta.                                         | Diminuir a quantidade de faltas.                                                          |
+| Pacientes faltando                        | Enviar lembretes e permitir confirmação antecipada da consulta.                                         | Diminuir a quantidade de faltas.                                                          |
 | Dificuldade para encontrar horários             | Disponibilizar uma consulta de horários livres por médico e especialidade.                              | Tornar o agendamento mais rápido e facilitar o trabalho da recepcionista.                 |
+
+---
+
+Fluxograma To Be
+file:///C:/Users/nathan.andrade/Downloads/processo%20to%20be.pdf 

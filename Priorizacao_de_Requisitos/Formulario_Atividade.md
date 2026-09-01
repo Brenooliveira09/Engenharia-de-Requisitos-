@@ -4,7 +4,7 @@
 
 **Disciplina:** Engenharia de Requisitos  
 **Atividade:** Levantamento Inicial de Requisitos  
-**Data:** 01/09  
+**Data:** 01/09/2026
 **Turma:** Turma A - Engenharia de Software
 
 ---

@@ -60,3 +60,44 @@ file:///C:/Users/nathan.andrade/Downloads/fluxograma%20do%20processo.pdf
 
 ## Fluxograma To Be
 file:///C:/Users/nathan.andrade/Downloads/processo%20to%20be.pdf 
+
+#  15. Etapa 10 – Requisitos Funcionais
+
+## Tabela de Requisitos Funcionais
+
+| Código | Requisito Funcional | Prioridade |
+|---|---|---|
+| RF01 | O sistema deverá permitir cadastrar pacientes. | Alta |
+| RF02 | O sistema deverá permitir consultar os dados dos pacientes cadastrados. | Alta |
+| RF03 | O sistema deverá permitir alterar os dados dos pacientes. | Média |
+| RF04 | O sistema deverá permitir cadastrar médicos. | Alta |
+| RF05 | O sistema deverá permitir cadastrar especialidades médicas. | Média |
+| RF06 | O sistema deverá permitir consultar os horários disponíveis dos médicos. | Alta |
+| RF07 | O sistema deverá permitir realizar agendamentos de consultas. | Alta |
+| RF08 | O sistema deverá permitir cancelar consultas agendadas. | Alta |
+| RF09 | O sistema deverá permitir confirmar consultas. | Alta |
+| RF10 | O sistema deverá enviar lembretes aos pacientes sobre suas consultas. | Alta |
+| RF11 | O sistema deverá permitir gerenciar a agenda dos médicos. | Alta |
+| RF12 | O sistema deverá permitir alterar os horários da agenda dos médicos. | Média |
+| RF13 | O sistema deverá permitir consultar os agendamentos realizados. | Alta |
+| RF14 | O sistema deverá registrar as informações dos atendimentos realizados. | Alta |
+| RF15 | O sistema deverá permitir consultar indicadores do processo. | Média |
+
+---
+
+#  16. Etapa 11 – Requisitos Não Funcionais
+
+## Tabela de Requisitos Não Funcionais
+
+| Código | Categoria | Requisito |
+|---|---|---|
+| RNF01 | Desempenho | O sistema deverá apresentar os horários disponíveis de um médico em até 3 segundos. |
+| RNF02 | Segurança | O sistema deverá exigir autenticação dos usuários para acessar funcionalidades restritas. |
+| RNF03 | Usabilidade | O sistema deverá possuir uma interface simples e intuitiva. |
+| RNF04 | Disponibilidade | O sistema deverá estar disponível durante o horário de funcionamento da clínica. |
+| RNF05 | Confiabilidade | O sistema deverá manter os dados armazenados corretamente, evitando perda ou duplicidade. |
+| RNF06 | Privacidade | O sistema deverá proteger os dados pessoais dos pacientes. |
+| RNF07 | Desempenho | O sistema deverá processar uma solicitação de agendamento em poucos segundos. |
+| RNF08 | Segurança | O sistema deverá controlar o acesso às informações de acordo com o tipo de usuário. |
+| RNF09 | Usabilidade | O sistema deverá apresentar mensagens claras durante as operações realizadas. |
+| RNF10 | Compatibilidade | O sistema deverá funcionar nos principais navegadores utilizados na clínica. |

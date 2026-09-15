@@ -61,7 +61,7 @@ file:///C:/Users/nathan.andrade/Downloads/fluxograma%20do%20processo.pdf
 ## Fluxograma To Be
 file:///C:/Users/nathan.andrade/Downloads/processo%20to%20be.pdf 
 
-#  15. Etapa 10 – Requisitos Funcionais
+#  15. Etapa 10 – Priorização de Requisitos
 
 ## Tabela de Requisitos Funcionais
 

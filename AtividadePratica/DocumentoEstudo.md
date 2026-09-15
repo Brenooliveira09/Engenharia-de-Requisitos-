@@ -25,7 +25,7 @@ A partir de um estudo de caso, o grupo deverá:
 - Modelar o processo futuro (TO-BE);
 - Levantar requisitos funcionais;
 - Levantar requisitos não funcionais;
-- Definir indicadores de desempenho.
+- Definir indicadores de desempenho;
 
 A atividade utiliza conceitos apresentados na Aula 03 sobre Gerenciamento de Processos de Negócio, BPM e BPM CBOK, incluindo processos ponta a ponta, atividades, regras, stakeholders e mapeamento de processos.
 

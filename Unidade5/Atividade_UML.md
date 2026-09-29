@@ -174,3 +174,5 @@ Quando um requisito funcional não possui correspondência no modelo UML, podem 
 ### Conclusão
 
 A rastreabilidade entre requisitos e casos de uso ajuda a garantir que as funcionalidades identificadas sejam representadas no modelo UML e consideradas durante o desenvolvimento e os testes.
+
+Link do Canva de Produto : https://www.canva.com/design/DAHWmo9spgU/e4WGOG5ip33es2vlxAwBwQ/edit

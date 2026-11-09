@@ -1,4 +1,4 @@
-## PROJETO ESTUDAFÁCIL - DIAGRAMA DE CASO D USO
+## PROJETO ESTUDAFÁCIL - DIAGRAMA DE CASO DE USO
 
 ## Etapa 1 — Leitura e Identificação dos Requisitos
 
